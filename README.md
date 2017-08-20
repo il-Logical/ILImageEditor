@@ -4,46 +4,47 @@
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](http://cocoapods.org/pods/ILImageEditor)
 [![Platform](https://img.shields.io/badge/platform-iOS-red.svg?style=flat-square)](http://cocoapods.org/pods/ILImageEditor)
 
-##Description
+## Description
 It is a simple image editor that performs most basic yet widely performed operations on an image like rotation, mirroring of images, resizing and cropping.
 
-##Features
+## Features
 - Rotation
 - Mirroring of image
 - Compression / Resizing
-- Cropping 
+- Cropping
+- Fix orientation
 
 ## Requirements
-- iOS 8.0+
+- iOS 9.0+
 
 ## Usage
 
 ILImageEditor is available on CocoaPods. Simply add the following line to your podfile:
 
-`
+```
 pod 'ILImageEditor'
-`
+```
 
 Alternatively, download the files and drag them in your Xcode project.
 
 ## Getting Started
-###Initialization
+### Initialization
 ````
 import ILImageEditor
 
-class myClass {
+class ImageEditor {
 	var editor = ILImageEditor()
 }
 ````
 
-###Usage
-####Fix incorrect image orientation.
+### Usage
+#### Fix incorrect image orientation.
 
-``
+```
 public func fixImageOrientation(image: UIImage) -> UIImage
-``
+```
 
-####Perform rotation, mirroring operations.
+#### Perform rotation, mirroring operations.
 
 `
 public func editImageWithOptions(image: UIImage, withOptions option: FlippingOptions) -> UIImage
@@ -61,7 +62,7 @@ public func cropAnImageToRect(image: UIImage, rectToCrop rect: CGRect) -> UIImag
 
 ## Author
 
-Muqtadir Ahmed, muqtadir007@gmail.com
+Muqtadir Ahmed, muqtadirahmd@gmail.com
 
 ## License
 
