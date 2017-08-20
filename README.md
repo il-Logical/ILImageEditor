@@ -1,6 +1,6 @@
 # ILImageEditor
 
-[![Version](https://img.shields.io/badge/pod-0.1.0-green.svg?style=flat-square)](http://cocoapods.org/pods/ILImageEditor)
+[![Version](https://img.shields.io/badge/pod-1.0.1-green.svg?style=flat-square)](http://cocoapods.org/pods/ILImageEditor)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](http://cocoapods.org/pods/ILImageEditor)
 [![Platform](https://img.shields.io/badge/platform-iOS-red.svg?style=flat-square)](http://cocoapods.org/pods/ILImageEditor)
 

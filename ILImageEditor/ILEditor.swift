@@ -8,17 +8,17 @@
 
 import UIKit
 
-class ILEditor {
+public class ILEditor: NSObject {
 
-    enum EditorError: Error {
+    public enum EditorError: Error {
         case IncorrectCropFrame
     }
 
-    enum RotateOptions: Int {
+    public enum RotateOptions: Int {
         case clockWise = 0, antiClockWise, vertical, horizontal
     }
 
-    enum CompressionOptions: CGFloat {
+    public enum CompressionOptions: CGFloat {
         case half = 2.0
         case oneThird = 3.0
         case oneFourth = 4.0
@@ -33,7 +33,7 @@ class ILEditor {
 
         - Returns: The mended image or nil if something did not add up.
     */
-    func mendOrientation(ofImage image: UIImage) -> UIImage? {
+    public func mendOrientation(ofImage image: UIImage) -> UIImage? {
         return image.mendOrientation()
     }
 
@@ -46,7 +46,7 @@ class ILEditor {
 
         - Returns: The rotated image or nil if something did not add up.
     */
-    func rotate(theImage image: UIImage, withOption option: RotateOptions) -> UIImage? {
+    public func rotate(theImage image: UIImage, withOption option: RotateOptions) -> UIImage? {
         return image.rotate(withOption: option)
     }
 
@@ -61,7 +61,7 @@ class ILEditor {
 
         - Returns: The compressed image or nil if something did not add up.
      */
-    func compress(theImage image: UIImage, toSize compression: CompressionOptions, withQuality qualtity: CGFloat = 1.0) -> UIImage? {
+    public func compress(theImage image: UIImage, toSize compression: CompressionOptions, withQuality qualtity: CGFloat = 1.0) -> UIImage? {
         return image.compress(compressionRatio: compression.rawValue, compressionQuality: qualtity)
     }
 
@@ -77,7 +77,7 @@ class ILEditor {
         - Returns: The cropped image or nil if something did not add up.
 
     */
-    func crop(theImage image: UIImage, cropRect rect: CGRect) throws -> UIImage? {
+    public func crop(theImage image: UIImage, cropRect rect: CGRect) throws -> UIImage? {
         do
         {
             return try image.crop(cropRect: rect)
