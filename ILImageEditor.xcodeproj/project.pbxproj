@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		75671C001D171F0B00F9E95B /* ILImageEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 75671BFF1D171F0B00F9E95B /* ILImageEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75671C0D1D17232900F9E95B /* ILImageCompressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75671C081D17232900F9E95B /* ILImageCompressor.swift */; };
-		75671C0E1D17232900F9E95B /* ILImageCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75671C091D17232900F9E95B /* ILImageCropper.swift */; };
-		75671C0F1D17232900F9E95B /* ILImageEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75671C0A1D17232900F9E95B /* ILImageEditor.swift */; };
-		75671C101D17232900F9E95B /* ILImageFixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75671C0B1D17232900F9E95B /* ILImageFixer.swift */; };
-		75671C111D17232900F9E95B /* ILImageOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75671C0C1D17232900F9E95B /* ILImageOperator.swift */; };
+		758064BD1F49277A00C8EED7 /* ILEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758064BC1F49277A00C8EED7 /* ILEditor.swift */; };
+		758064C11F49370100C8EED7 /* CompressorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758064C01F49370100C8EED7 /* CompressorExtension.swift */; };
+		758064C31F49379D00C8EED7 /* CropperExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758064C21F49379D00C8EED7 /* CropperExtension.swift */; };
+		758064C51F49381900C8EED7 /* OrientationMenderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758064C41F49381900C8EED7 /* OrientationMenderExtension.swift */; };
+		758064C71F49383900C8EED7 /* RotatorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758064C61F49383900C8EED7 /* RotatorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		75671BFC1D171F0900F9E95B /* ILImageEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ILImageEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75671BFF1D171F0B00F9E95B /* ILImageEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILImageEditor.h; sourceTree = "<group>"; };
 		75671C011D171F0B00F9E95B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75671C081D17232900F9E95B /* ILImageCompressor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ILImageCompressor.swift; sourceTree = "<group>"; };
-		75671C091D17232900F9E95B /* ILImageCropper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ILImageCropper.swift; sourceTree = "<group>"; };
-		75671C0A1D17232900F9E95B /* ILImageEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ILImageEditor.swift; sourceTree = "<group>"; };
-		75671C0B1D17232900F9E95B /* ILImageFixer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ILImageFixer.swift; sourceTree = "<group>"; };
-		75671C0C1D17232900F9E95B /* ILImageOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ILImageOperator.swift; sourceTree = "<group>"; };
+		758064BC1F49277A00C8EED7 /* ILEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ILEditor.swift; sourceTree = "<group>"; };
+		758064C01F49370100C8EED7 /* CompressorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompressorExtension.swift; sourceTree = "<group>"; };
+		758064C21F49379D00C8EED7 /* CropperExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropperExtension.swift; sourceTree = "<group>"; };
+		758064C41F49381900C8EED7 /* OrientationMenderExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationMenderExtension.swift; sourceTree = "<group>"; };
+		758064C61F49383900C8EED7 /* RotatorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotatorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +56,11 @@
 		75671BFE1D171F0A00F9E95B /* ILImageEditor */ = {
 			isa = PBXGroup;
 			children = (
-				75671C081D17232900F9E95B /* ILImageCompressor.swift */,
-				75671C091D17232900F9E95B /* ILImageCropper.swift */,
-				75671C0A1D17232900F9E95B /* ILImageEditor.swift */,
-				75671C0B1D17232900F9E95B /* ILImageFixer.swift */,
-				75671C0C1D17232900F9E95B /* ILImageOperator.swift */,
+				758064C01F49370100C8EED7 /* CompressorExtension.swift */,
+				758064C21F49379D00C8EED7 /* CropperExtension.swift */,
+				758064BC1F49277A00C8EED7 /* ILEditor.swift */,
+				758064C41F49381900C8EED7 /* OrientationMenderExtension.swift */,
+				758064C61F49383900C8EED7 /* RotatorExtension.swift */,
 				75671C071D1722F800F9E95B /* Supporting Files */,
 			);
 			path = ILImageEditor;
@@ -113,11 +113,12 @@
 		75671BF31D171F0800F9E95B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Muqtadir Ahmed";
 				TargetAttributes = {
 					75671BFB1D171F0800F9E95B = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -153,11 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75671C0E1D17232900F9E95B /* ILImageCropper.swift in Sources */,
-				75671C0F1D17232900F9E95B /* ILImageEditor.swift in Sources */,
-				75671C0D1D17232900F9E95B /* ILImageCompressor.swift in Sources */,
-				75671C101D17232900F9E95B /* ILImageFixer.swift in Sources */,
-				75671C111D17232900F9E95B /* ILImageOperator.swift in Sources */,
+				758064C11F49370100C8EED7 /* CompressorExtension.swift in Sources */,
+				758064C71F49383900C8EED7 /* RotatorExtension.swift in Sources */,
+				758064C31F49379D00C8EED7 /* CropperExtension.swift in Sources */,
+				758064C51F49381900C8EED7 /* OrientationMenderExtension.swift in Sources */,
+				758064BD1F49277A00C8EED7 /* ILEditor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,8 +179,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -227,8 +230,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -248,6 +253,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -259,6 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -270,6 +277,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -277,6 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -287,6 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ill-Logical.ILImageEditor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -309,6 +319,7 @@
 				75671C061D171F0B00F9E95B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
