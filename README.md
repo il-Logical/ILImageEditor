@@ -28,37 +28,46 @@ pod 'ILImageEditor'
 Alternatively, download the files and drag them in your Xcode project.
 
 ## Getting Started
-### Initialization
+### Initialization & Usage
 ````
 import ILImageEditor
 
 class ImageEditor {
-	var editor = ILImageEditor()
+	let editor = ILEditor()
+
+	func operations(_ image: UIImage) {
+		// Mend orientation of camera picked images.
+		if let _image = editor.mendOrientation(ofImage: image) {
+			// _image with fixed orientation.
+		}
+
+		// Rotate the image.
+		// RotateOptions: clockwise, antiClockwise, horizontal, vertical
+		if let _image = editor.rotate(theImage: image, withOption: .vertical) {
+			// _image has the rotated/ mirrored image.
+		}
+
+		// Compress the image.
+		// CompressionOptions: half, oneThird, oneFourth, oneFifth, oneTenth
+		// Quality: 0.0 - 1.0
+		if let _image = editor.compress(theImage: image, toSize: .oneThird, withQuality: 0.5) {
+			// _image has the compressed image.
+		}
+
+		// Crop the image.
+		do {
+			let cropped = try editor.cropRect(theImage: image, cropRect: rect)
+			if let _image = cropped {
+				// _image is the cropped image.
+			}
+		}
+		catch editor.EditorError.IncorrectCropFrame {
+			// Incorrect crop frame provided.
+		}
+		catch {}
+	}
 }
 ````
-
-### Usage
-#### Fix incorrect image orientation.
-
-```
-public func fixImageOrientation(image: UIImage) -> UIImage
-```
-
-#### Perform rotation, mirroring operations.
-
-`
-public func editImageWithOptions(image: UIImage, withOptions option: FlippingOptions) -> UIImage
-`
-
-####Compress or resize image.
-`
-public func compressImageToSize(image: UIImage, withSize size: CompressionOptions, compressionQualtity: CGFloat) -> UIImage
-`
-
-####Crop image to given rect.
-`
-public func cropAnImageToRect(image: UIImage, rectToCrop rect: CGRect) -> UIImage
-`
 
 ## Author
 
