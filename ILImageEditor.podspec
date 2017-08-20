@@ -10,7 +10,7 @@ s.summary = "ILImageEditor lets a user perform basic image editing operations li
 
 s.requires_arc = true
 
-s.version = "1.0.0"
+s.version = "1.0.1"
 
 s.license = { :type => "MIT", :file => "LICENSE" }
 
