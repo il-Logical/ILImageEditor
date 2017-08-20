@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 s.platform = :ios
 
-s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '9.0'
 
 s.name = "ILImageEditor"
 
@@ -10,11 +10,11 @@ s.summary = "ILImageEditor lets a user perform basic image editing operations li
 
 s.requires_arc = true
 
-s.version = "0.1.0"
+s.version = "1.0.0"
 
 s.license = { :type => "MIT", :file => "LICENSE" }
 
-s.author = { "Muqtadir Ahmed" => "muqtadir007@gmail.com" }
+s.author = { "il-Logical" => "muqtadir007@gmail.com" }
 
 s.homepage = "https://github.com/ill-Logical/ILImageEditor"
 
